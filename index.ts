@@ -1,1 +1,3 @@
-export default {};
+import Stunsail from './lib';
+export * from './lib';
+export default Stunsail;

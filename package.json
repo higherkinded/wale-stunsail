@@ -1,5 +1,5 @@
 {
-  "name": "wale-stunsail",
+  "name": "@wale.ts/stunsail",
   "version": "0.0.0",
   "description": "State management library for Wale",
   "main": "index.ts",
@@ -11,12 +11,13 @@
   "license": "GPL-3.0",
   "private": false,
   "scripts": {
+    "pub": "npm run clean && npm publish --access public",
     "build": "npx webpack",
     "watch": "npx webpack -w --watch-poll 100 --display verbose",
     "clean": "(find . -name '*~*' -or -name '#*#' | xargs rm 2>&- 1>&-) || exit 0"
   },
   "dependencies": {
-    "wale-vdom": "^0.1.0"
+    "@wale.ts/vdom": "^0.1.0"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",

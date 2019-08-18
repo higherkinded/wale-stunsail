@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@wale.ts/vdom@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@wale.ts/vdom/-/vdom-0.1.0.tgz#a18ebdf7cc5a0428a52980d3c0f7be3fc610d129"
+  integrity sha512-5rO2BBXjNDTlbGR43zxzVC8jSUedSGh8SzmXo6C0lb0oprOj0q//kuGgfAaT2erx9M1ECoAAayE9DYqIImbqOA==
+  dependencies:
+    fp-ts "2"
+
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.8.5.tgz#51b1c5fe6576a34953bf4b253df9f0d490d9e359"
@@ -4883,13 +4890,6 @@ vm-browserify@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
-
-wale-vdom@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/wale-vdom/-/wale-vdom-0.1.0.tgz#1bef9b2a20201f2c0359f998e3314650d4c1318a"
-  integrity sha512-9Irvu4SBsFQStu5Rm2jpswOxBse7wxQJVjknciC/TtCjeY9qcinUuaJSKtgCbypyNv0uWXoBHF37MlIRv8hNpg==
-  dependencies:
-    fp-ts "2"
 
 watchpack@^1.6.0:
   version "1.6.0"
