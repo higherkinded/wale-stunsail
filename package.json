@@ -1,0 +1,30 @@
+{
+  "name": "wale-stunsail",
+  "version": "0.0.0",
+  "description": "State management library for Wale",
+  "main": "index.ts",
+  "files": [
+    "/lib"
+  ],
+  "repository": "https://github.com/higherkinded/wale-stunsail",
+  "author": "higherkinded",
+  "license": "GPL-3.0",
+  "private": false,
+  "scripts": {
+    "build": "npx webpack",
+    "watch": "npx webpack -w --watch-poll 100 --display verbose",
+    "clean": "(find . -name '*~*' -or -name '#*#' | xargs rm 2>&- 1>&-) || exit 0"
+  },
+  "dependencies": {
+    "wale-vdom": "^0.1.0"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "npx": "^10.2.0",
+    "source-map": "^0.7.3",
+    "typescript": "3.5",
+    "webpack": "^4.39.2",
+    "webpack-build-notifier": "^2.0.0-alpha.3",
+    "webpack-cli": "^3.3.6"
+  }
+}
