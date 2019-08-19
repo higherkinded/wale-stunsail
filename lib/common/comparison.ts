@@ -2,7 +2,7 @@ import Assoc from './Assoc';
 import Sets from './sets';
 import { areArrays, areObjects } from './guards';
 
-export const REMOVED = Symbol('remove');
+export const REMOVED = Symbol('REMOVED');
 
 /** A = B, shallow */
 export const shallowEq = (a: Assoc, b: Assoc): boolean => {
@@ -28,8 +28,11 @@ export const diff = (a: Assoc, b: Assoc) => {
   const createdKeys = Sets.complement(kB, kA);
   const otherKeys = Sets.complement(kA, removedKeys);
 
+  // Stating removal.
   removedKeys.forEach(k => { delta[k] = REMOVED });
   createdKeys.forEach(k => { delta[k] = b[k] });
+
+  // Acting on differences between persistent entries
   otherKeys.forEach(k => {
     // Arrays, of all objects, are special.
     if (areArrays([a[k], b[k]]) && !Sets.shallowEq(a[k], b[k])) {
@@ -50,6 +53,10 @@ export const diff = (a: Assoc, b: Assoc) => {
   });
 
   return diff;
+};
+
+const mergeDiffs = (a: Assoc, b: Assoc) => {
+
 };
 
 export default {
